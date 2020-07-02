@@ -1,0 +1,334 @@
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+body{
+	min-width: 1280px;
+}
+#lxfs{
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+}
+#lxfs .left{
+	height: 30px;
+	float: left;
+	margin-left: 20px;
+}
+#lxfs .left ul{
+	list-style-type: none;
+}
+#lxfs .left ul li{
+	line-height: 30px;
+	font-size: 18px;
+}
+#lxfs .right{
+	height: 30px;
+	list-style-type: none;
+	float: right;
+	margin-right: 20px;
+}
+#lxfs .right ul{
+	float: right;
+	list-style-type: none;
+}
+#lxfs .right ul li{
+	float: left;
+	line-height: 30px;
+	margin-left: 5px;
+}
+#lxfs .right ul li a{
+	text-decoration: none;
+	color: #55aaff;
+}
+#menu{
+	overflow: visible;
+	width: 100%;
+	height: 50px;
+	background-color: #eee;
+}
+#menu ul a{
+	color: #555;
+}
+#menu ul{
+	list-style-type: none;
+}
+#menu ul li{
+	float: left;
+	line-height: 50px;
+}
+#menu ul .left{
+	float: left;
+}
+#menu ul .left .logo{
+	width: 100px;
+	margin-left: 30px;
+	padding: 0;
+}
+#menu ul .left .change a{
+	text-decoration: none;
+}
+#menu ul .left .change li{
+	padding: 0 20px;
+	text-align: center;
+}
+#menu ul .left .change li:hover{
+	background-color: #ccc;
+}
+#menu ul .search input{
+	margin-left: 10px;
+	padding-left: 10px;
+	height: 30px;
+	border: 1px solid #CCC;
+	border-radius: 5px 0 0 5px;
+}
+#menu ul .search button{
+	padding: 0 10px;
+	margin: 9px 0 9px 0;
+	line-height: 30px;
+	border-radius: 0 5px 5px 0;
+	border: 1px solid #428BCA;
+	background-color: #428BCA;
+	color: #ffe;
+}
+#menu ul .right{
+	float: right;
+}
+#menu ul .right li{
+	padding: 0 20px;
+	text-align: center;
+}
+#menu ul .right li:hover{
+	background-color: #ccc;
+}
+#menu ul .left .down, #menu ul .right .down{
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 0;
+	border: 4px solid transparent;
+	border-top-color:#555;
+}
+#menu ul .left .change .kcxt, #menu ul .right .gzwm{
+	position: relative;
+	width: 69px;
+}
+#menu ul .left .change .kcxt ul, #menu ul .right .gzwm ul{
+	display: none;
+	list-style-type: none;
+	border: 1px solid #eee;
+	border-radius: 0 0 4px 4px;
+}
+#menu ul .left .change .kcxt ul{
+	position: absolute;
+	background-color: #fff;
+	left: 0;
+	top: 50px;
+}
+#menu ul .left .change .kcxt ul .fgxtop{
+	line-height: 0;
+	border-bottom: 1px solid #ccc;
+	margin: 5px 0;
+}
+#menu ul .left .change .kcxt ul .fgxbottom{
+	line-height: 0;
+	border-top: 1px solid #ccc;
+	margin: 5px 0;
+}
+#menu ul .right .gzwm ul{
+	position: absolute;
+	left: -70px;
+	top: 50px;
+}
+#menu ul .left .change .kcxt ul li, #menu ul .right .gzwm ul li{
+	width: 137px;
+	line-height: 25px;
+	clear: both;
+	background-color: #fff;
+	text-align: left;
+}
+#menu ul .left .change .kcxt:hover ul, #menu ul .right .gzwm:hover ul{
+	display: block;
+}
+#menu ul .left .change .kcxt ul li:hover,#menu ul .right .gzwm ul li:hover{
+	background-color: #ccc;
+}
+#banner #box{
+	width: 100%;
+	height: 470px;
+}
+#banner #left{
+	position: absolute;
+	left: 60px;
+	top: 280px;
+	width: 33px;
+	height: 45px;
+}
+#banner #right{
+	position: absolute;
+	right: 60px;
+	top: 280px;
+	width: 33px;
+	height: 45px;
+}
+#banner #circle1, #banner #circle2, #banner #circle3{
+	width: 16px;
+	height: 16px;
+	border: 1px solid #fff;
+	border-radius: 8px;
+}
+#banner #circle1{
+	position: absolute;
+	left: 47%;
+	top: 470px;
+}
+#banner #circle2{
+	position: absolute;
+	left: 50%;
+	top: 470px;
+}
+#banner #circle3{
+	position: absolute;
+	left: 53%;
+	top: 470px;
+}
+#gif{
+	height: 200px;
+	margin: 10px 30px;
+	overflow: hidden;
+}
+#gif .gif{
+	float: left;
+	width: 25%;
+	height: 180px;
+	text-align: center;
+}
+#gif .p{
+	float: left;
+	width: 25%;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+#xxlj .bt, #jyrm .bt{
+	width: 300px;
+	height: 50px;
+	margin: 30px auto;
+}
+#xxlj .bt fieldset, #jyrm .bt fieldset{
+	border: none;
+	border-top: 2px solid #ccc;
+}
+#xxlj .bt fieldset legend, #jyrm .bt fieldset legend{
+	font-size: 36px;
+	line-height: 36px;
+	margin:0 auto;
+}
+#xxlj .nr{
+	height: 400px;
+	margin-left: 100px;
+	overflow: hidden;
+}
+#xxlj .nr ul{
+	height: 100px;
+	list-style-type: none;
+	clear: both;
+}
+#xxlj .nr ul .img{
+	font-size: 0;
+}
+#xxlj .nr ul li{
+	width: 16%;
+	height: 100px;
+	float: left;
+}
+#xxlj .nr ul li .text{
+	display: block;
+	width: 110px;
+	height: 40px;
+	margin-top: 30px;
+}
+#jyrm .nr{
+	height: 300px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+#jyrm .nr ul{
+	height: 100px;
+	list-style-type: none;
+}
+#jyrm .nr ul li{
+	width: 25%;	
+	float: left;
+}
+#jyrm .nr .p li{
+	width: 25%;
+}
+#jyrm .nr .p li .big{
+	display: block;
+	width: 282px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+#jyrm .nr .p li .text{
+	display: block;
+	width: 268px;
+}
+#jyrm .nr .img li{
+	height: 190px;
+	font-size: 0;
+}
+#jyrm .nr .img li img{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+#xxtx{
+	height: 400px;
+	background-color: rgba(238,238,238,1.00);
+}
+#xxtx img{
+	float: right;
+	margin: 60px 140px 0 0;
+}
+#xxtx .big{
+	display: block;
+	width: 200px;
+	padding: 80px 0 0 260px;
+	font-size: 28px;
+}
+#xxtx .text{
+	display: block;
+	width: 300px;
+	margin: 0 0 0 210px;
+}
+#glfs{
+	height: 310px;
+}
+#glfs img{
+	float: left;
+	margin: 50px 0 0 120px;
+}
+#glfs .big{
+	display: block;
+	width: 200px;
+	float: right;
+	font-size: 28px;
+	padding: 70px 150px 0 0;
+}
+#glfs .text{
+	display: block;
+	width: 270px;
+	float: right;
+	margin: 100px -234px 0 0;
+}
+#copy{
+	height: 100px;
+	background-color: rgba(102,102,102,1.00);
+	color: #eee;
+	text-align: center;
+	line-height: 30px;
+	padding-top: 20px;
+}
