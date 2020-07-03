@@ -15,7 +15,7 @@
 			padding-top: 60px;
 			background-color: bisque;
 		}
-		#box1, #box2, #box3, #box4, #box5, #box6{
+		#box1, #box2, #box3, #box4, #box5, #show{
 			height: 40px;
 			text-align: left;
 			padding-left: 100px;
@@ -48,10 +48,29 @@
 			margin-top: 20px;
 			font-size: 20px;
 		}
+		#show{
+			width: 200px;
+			margin: 40px auto;
+			padding: 0;
+			text-align: center;
+		}
 	</style>
 	<script type="text/javascript">
-		//等额本金：月供金额=贷款金额/还款天数+贷款金额*月利息
+		function start(){
+			if(hkfs.selectedIndex == 0)
+				benxi();
+			else
+				benjin();
+		}
+		//等额本金：月供金额=贷款金额/还款月数+贷款金额*月利息
+		function benjin(){
+			ygje = dkje.value * 10000 / dkqx.value * 12 + dkje.value * 10000 * nll[nll.selectedIndex].value / 1200;
+			show.innerHTML = ygje;
+		}
 		//等额本息：月供总额=贷款金额*月利率*(1+月利率)^还款月数/[(1+月利率)^还款月数-1]
+		function benxi(){
+			show.innerHTML = "月供金额：" + 1 + "元<br>还款总额：" + 2 + "元<br>总利息：" + 3 + "元";
+		}
 	</script>
 </head>
 	
@@ -83,9 +102,7 @@
 		<div id="box5">
 			<button type="button" onClick="start()" id="jsfd">计算房贷</button>
 		</div>
-		<div id="box6">
-			<div id="show()"></div>
-		</div>
+		<div id="show"></div>
 	</div>
 </body>
 </html>
