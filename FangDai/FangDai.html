@@ -7,15 +7,46 @@
 		*{
 			margin: 0;
 			padding: 0;
-			font-size: 14px;
-			line-height: 20px;
 		}
 		#box{
 			width:480px;
-			height: 640px;
-			margin: auto;
-			padding: auto;
+			height: 520px;
+			margin: 0 auto;
+			padding-top: 60px;
 			background-color: bisque;
+		}
+		#box1, #box2, #box3, #box4, #box5, #box6{
+			height: 40px;
+			text-align: left;
+			padding-left: 100px;
+			margin-top: 20px;
+			font-size: 20px;
+			line-height: 40px;
+		}
+		#hkfs{
+			width: 110px;
+			height: 30px;
+			font-size: 20px;
+		}
+		#dkje, #dkqx{
+			wdith:100px;
+			height: 30px;
+			font-size: 20px;
+		}
+		#nll{
+			width: 70px;
+			height: 30px;
+			font-size: 20px;
+			margin-left: 14px;	
+		}
+		#jsfd{
+			width: 100px;
+			height: 40px;
+			border: 1px solid rgba(61,236,75,1.00);
+			border-radius: 3px;
+			margin-left: 94px;
+			margin-top: 20px;
+			font-size: 20px;
 		}
 	</style>
 	<script type="text/javascript">
@@ -26,24 +57,35 @@
 	
 <body>
 	<div id="box">
-		还款方式
-		<select id="hkfs">
-			<option>等额本息</option>
-			<option>等额本金</option>
-		</select>
-		<br>
-		贷款金额:<input type="text" id="hkje">万元
-		<br>
-		贷款期限:<input type="text" id="hksj">年
-		<br>
-		年利率:
-		<select id="nll">
-			<option value="4.9">4.9%</option>
-			<option value="5.39">5.39%</option>
-		</select>
-		<br>
-		<button type="button" onClick="start()">计算房贷</button>
-		<div id="show()"></div>
+		<div id="box1">
+			还款方式
+			<select id="hkfs">
+				<option>等额本息</option>
+				<option>等额本金</option>
+			</select>
+		</div>
+		<div id="box2">
+			贷款金额:<input type="text" id="dkje">万元
+		</div>
+		<div id="box3">
+			贷款期限:<input type="text" id="dkqx">年
+		</div>
+		<div id="box4">
+			年利率:
+			<select id="nll">
+				<option value="4.90">4.9%</option>
+				<option value="5.39">5.39%</option>
+				<option value="5.86">5.86%</option>
+				<option value="5.88">5.88%</option>
+				<option value="6.37">6.37%</option>
+			</select>
+		</div>
+		<div id="box5">
+			<button type="button" onClick="start()" id="jsfd">计算房贷</button>
+		</div>
+		<div id="box6">
+			<div id="show()"></div>
+		</div>
 	</div>
 </body>
 </html>
