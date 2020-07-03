@@ -68,19 +68,26 @@
 				benxi();
 		}
 		function benxi(){
+			document.getElementById("benjinshow").style.display = "none";
 			DKJE = dkje.value * 10000;
 			YLL = nll[nll.selectedIndex].value / 1200;
 			HKYS = dkqx.value * 12;
 			yged = DKJE*YLL*Math.pow((1+YLL),HKYS)/(Math.pow((1+YLL),(HKYS))-1);
 			hkze = yged * HKYS;
 			zlx = hkze - DKJE;
-			show.innerHTML = "月供额度：" + yged.toFixed(2) + "元<br>还款总额：" + hkze.toFixed(2) + "元<br>总利息：" + zlx.toFixed(2) + "元";
+			benjinshow.rows[0].cells[0].innerHTML = "月供额度：";
+			benjinshow.rows[0].cells[1].innerHTML =  yged.toFixed(2) + "元";
+			benjinshow.rows[1].cells[0].innerHTML = "还款总额：";
+			benjinshow.rows[1].cells[1].innerHTML = hkze.toFixed(2) + "元";
+			benjinshow.rows[2].cells[0].innerHTML = "总利息：";
+			benjinshow.rows[2].cells[1].innerHTML = zlx.toFixed(2) + "元";
+			document.getElementById("benjinshow").style.display = "block";
 		}
 		function benjin(){
+			document.getElementById("benjinshow").style.display = "none";
 			yhed = 0;
 			temp = "";
 			YGED = "";
-			document.getElementById("benjinshow").style.display = "block";
 			DKJE = dkje.value * 10000;
 			YLL = nll[nll.selectedIndex].value / 1200;
 			HKYS = dkqx.value * 12;
@@ -95,6 +102,7 @@
 			benjinshow.rows[0].cells[1].innerHTML = YGED;
 			benjinshow.rows[1].cells[1].innerHTML = YHED.toFixed(2);
 			benjinshow.rows[2].cells[1].innerHTML = ZLX.toFixed(2);
+			document.getElementById("benjinshow").style.display = "block";
 		}
 	</script>
 </head>
