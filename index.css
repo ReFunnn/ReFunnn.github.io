@@ -10,7 +10,7 @@ html, body{
 	min-width: 960px;
 	background-color: #ccc;
 }
-div{
+#Re{
 	width: 960px;
 	height: 1280px;
 	margin: 0 auto;
@@ -20,4 +20,7 @@ div{
 	background-color: #eee;
 	border: 2px solid #99F3EC;
 	border-radius: 20px;
+	font-size: 48px;
+	line-height: 1280px;
+	text-align: center;
 }
